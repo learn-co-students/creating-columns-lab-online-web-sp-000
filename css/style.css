@@ -8,6 +8,26 @@ body, html {
   background-color: #666;
 }
 
+.small {
+  height: 100%;
+  width: 100%;
+}
+
+.med {
+  height: 200%;
+  width: 200%
+}
+.large {
+  height: 300%;
+  width: 300%
+}
+
+.column{
+  vertical-align: top;
+  display: inline-block;
+  width: auto;
+}
+
 .container, h1 {
   width: 80%;
   max-width: 600px;
