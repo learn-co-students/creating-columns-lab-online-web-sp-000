@@ -47,5 +47,53 @@ img:hover {
 }
 
 /* create a column class! make sure all of the divs within 'container's have a class of 'column' */
-
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  grid-template-areas:
+  "a c c"
+  "b c c"
+  "d e f";
+}
+.indifferent {
+  grid-template-areas:
+  "c c a"
+  "c c b"
+  "d e f";
+}
+.med-1 {
+  grid-area: c;
+}
 /* create your tile classes! we recommend .small .med .large */
+.small-1 {
+  grid-area: a;
+}
+.small-2 {
+  grid-area: b;
+}
+.small-3 {
+  grid-area: d;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+.med {
+  grid-area: c;
+}
+.small-4 {
+  grid-area: e;
+}
+.small-5 {
+  grid-area: f;
+}
+.dubious {
+  grid-template-areas:
+  "a a a"
+  "a a a"
+  "a a a";
+}
+.large {
+  grid-area: a;
+}
