@@ -14,8 +14,7 @@ body, html {
   min-width: 400px;
   padding: 10px;
   margin: 10px auto;
-  display: flex;
-  grid-template-columns: 1fr 1fr 1fr;
+
 }
 
 h4 {
@@ -50,21 +49,23 @@ img:hover {
 
 /* create a column class! make sure all of the divs within 'container's have a class of 'column' */
 .column {
-  float: left;
-  /*width: 1fr;*/
+  display: flex;
+
+
 }
 
 /* create your tile classes! we recommend .small .med .large */
 .small {
-  width: 1fr;
+width: 25%;
+float: clear;
 }
 
 .med {
-  width: 2fr;
+width: 50%;
 
 }
 
 .large {
-  width: 3fr;
+width: 96%;
 
 }
