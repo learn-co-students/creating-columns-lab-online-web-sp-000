@@ -47,23 +47,46 @@ img:hover {
 }
 
 .column {
-  width: 33%;
-  display: block;
+  display: grid;
+  width: 30%;
+  grid-template-columns: repeat(3, 100%px);
+  grid-template-rows: repeat(3, 100%);
+  justify-content: center;
+  align-content: end;
 }
 
 .small {
   width: 33%;
-  float: center;
+
 }
 
 .med {
   width: 66%;
-  float: center;
+
 }
 
 .large {
   width: 100%;
-  float: center;
+
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+col-1 {
+  grid-column: 1;
+}
+
+col-2 {
+  grid-column: 2;
+}
+
+col-3 {
+  grid-column: 3;
 }
 
 /* create a column class! make sure all of the divs within 'container's have a class of 'column' */
