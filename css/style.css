@@ -33,6 +33,29 @@ img:hover {
   box-shadow:  -1px 1px #22aa44, -2px 2px #22aa44, -3px 3px #22aa44, -4px 4px #22aa44, -5px 5px #22aa44;
   background-color: #44cc66;
 }
+div.grid1 {
+  display: grid;
+  grid-template-areas:  "img1 img4 img4" 
+                        "img2 img4 img4" 
+                        "img3 img5 img6" ;
+}
+div.grid2 {
+  display: grid;
+  grid-template-areas:  "img1 img1 img4" 
+                        "img1 img1 img5" 
+                        "img2 img3 img6" ;
+}
+
+
+
+
+
+
+
+img {
+  width: 100%;
+  height: auto;
+}
 
 .indifferent {
   border: 1px solid #aaaa00;
