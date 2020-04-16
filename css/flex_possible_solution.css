@@ -1,0 +1,63 @@
+.column {
+    flex: 33.33%;
+    margin: 0 auto;
+    padding: 5px;
+  }
+  
+  .small {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  
+  .med {
+    width: 200%;
+    height: auto;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .large {
+  
+  }
+  
+  div.amiable div.column:nth-child(2) {
+    vertical-align: top;
+  }
+  
+  /* div.amiable div.column:last-child img{
+    float: left;
+  } */
+  
+  div.amiable {
+    display: flex;
+  }
+
+  /* 
+  
+  Other possible solution
+  .container {
+    overflow: auto;
+  }
+  
+  /* create a column class! make sure all of the divs within 'container's have a class of 'column' */
+  
+  /* .column {
+    display: block;
+    width: 32.5%;
+    max-width: 65%;
+    float: left;
+    padding: 10px 2px;
+  }
+  
+  .small {
+    width: 100%;
+    height: auto;
+  }
+  
+  .med {
+    width: 65%;
+    height: auto;
+    vertical-align: top;
+    float: left;
+  } */
