@@ -1,3 +1,4 @@
+
 body, html {
   width: 100%;
   height: 100%;
@@ -32,12 +33,14 @@ img:hover {
   border: 1px solid #22aa44;
   box-shadow:  -1px 1px #22aa44, -2px 2px #22aa44, -3px 3px #22aa44, -4px 4px #22aa44, -5px 5px #22aa44;
   background-color: #44cc66;
+  overflow: hidden;
 }
 
 .indifferent {
   border: 1px solid #aaaa00;
   box-shadow:  -1px 1px #aaaa00, -2px 2px #aaaa00, -3px 3px #aaaa00, -4px 4px #aaaa00, -5px 5px #aaaa00;
   background-color: #dddd22;
+  overflow: hidden;
 }
 
 .dubious {
@@ -46,6 +49,45 @@ img:hover {
   background-color: #dd4444;
 }
 
-/* create a column class! make sure all of the divs within 'container's have a class of 'column' */
+.column {
+  width: 31.3%;
+  display: block;
+  float: left;
+}
 
-/* create your tile classes! we recommend .small .med .large */
+.small {
+  width: 95%;
+  /* margin-top: 2%; */
+}
+
+.med {
+  width: 60%;
+  height: auto;
+  /* float: left; */
+  /* display: inline-block;
+  vertical-align: top; */
+}
+
+div.indifferent > img.med {
+  float: left;
+  margin-left: 1%;
+  overflow: hidden;
+}
+
+div.indifferent > div.column:nth-of-type(1) {
+  clear: left; 
+  margin-left: 0;
+}
+
+div.indifferent > div.column:nth-of-type(2) {
+  float: left;
+} 
+
+div.indifferent > div.column:nth-of-type(3) {
+  float: none;
+  display: inline-block;
+}
+.large {
+  width: 90%;
+}
+
