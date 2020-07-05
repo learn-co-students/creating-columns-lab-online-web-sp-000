@@ -9,6 +9,7 @@ body, html {
 }
 
 .container, h1 {
+
   width: 80%;
   max-width: 600px;
   min-width: 400px;
@@ -17,6 +18,7 @@ body, html {
 }
 
 h4 {
+  
   width: fit-content;
   display: inline-block;
   padding: 5px;
@@ -27,14 +29,18 @@ img:hover {
   transition-duration: 1s;
   transform: scale(1.05);
 }
-
+h4.amiable {
+  
+}
 .amiable {
+  
   border: 1px solid #22aa44;
   box-shadow:  -1px 1px #22aa44, -2px 2px #22aa44, -3px 3px #22aa44, -4px 4px #22aa44, -5px 5px #22aa44;
   background-color: #44cc66;
 }
 
 .indifferent {
+  
   border: 1px solid #aaaa00;
   box-shadow:  -1px 1px #aaaa00, -2px 2px #aaaa00, -3px 3px #aaaa00, -4px 4px #aaaa00, -5px 5px #aaaa00;
   background-color: #dddd22;
@@ -44,8 +50,35 @@ img:hover {
   border: 1px solid #aa2222;
   box-shadow: -1px 1px #aa2222, -2px 2px #aa2222, -3px 3px #aa2222, -4px 4px #aa2222, -5px 5px #aa2222;
   background-color: #dd4444;
+
 }
 
 /* create a column class! make sure all of the divs within 'container's have a class of 'column' */
 
+.column {
+  display: inline-block;
+  width: 140px;
+}
+
+
 /* create your tile classes! we recommend .small .med .large */
+.small {
+  
+  float: left;
+  width: 140px;
+  height: 140px;
+  padding: 3px;
+  vertical-align: top;
+}
+.medium {
+  float: left;
+  width: 280px;
+  height: 280px;
+  padding: 8px;
+  vertical-align: top;
+}
+.large {
+  
+  width: 600px;
+  height: 600px;
+}
