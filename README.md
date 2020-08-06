@@ -12,7 +12,7 @@ clean code and a clean column-based look.
 
 1. Practice writing and employing a column based CSS rule set
 
-
+##
 ## Introduction
 
 Using a 'before' and 'after' example, we will transform a page into a column
