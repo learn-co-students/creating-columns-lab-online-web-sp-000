@@ -46,6 +46,28 @@ img:hover {
   background-color: #dd4444;
 }
 
-/* create a column class! make sure all of the divs within 'container's have a class of 'column' */
+.container {
+  display: grid;
+  grid-template-columns: minmax(133.33px, 200px) minmax(133.33px, 200px) minmax(133.33px, 200px);
+  grid-auto-rows: max-content;
+  grid-gap: 5px;
+}
 
-/* create your tile classes! we recommend .small .med .large */
+.column {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.small {
+  width: 100%;
+}
+
+.med {
+  width: 200%;
+  
+}
+
+.large {
+  width: 300%
+}
