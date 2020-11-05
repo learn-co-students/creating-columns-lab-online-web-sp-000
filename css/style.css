@@ -49,7 +49,7 @@ img:hover {
 /* create a column class! make sure all of the divs within 'container's have a class of 'column' */
 .column{
   display: flex;
-  vertical-align: top;
+  flex-direction: column;
 }
 /* create your tile classes! we recommend .small .med .large */
 .small{
@@ -65,4 +65,45 @@ img:hover {
 .large{
   height: 90%;
   width: 90%;
+}
+
+.left.column{
+  flex-direction: column;
+}
+
+.right.column{
+  flex-direction: column;
+  float: right;
+}
+
+.amiable .left.column{
+  width: 30%;
+}
+
+.amiable .right.column{
+  width: 60%;
+}
+
+.indifferent .left.column{
+  width: 60%;
+}
+
+.indifferent .right.column{
+  width: 30%;
+}
+
+.column img.small {
+  width: 100%;
+}
+
+.column img.med{
+  width: 100%;
+}
+
+.column.lower img.small{
+  width: 50%;
+}
+
+.column.lower{
+  flex-direction: row;
 }
