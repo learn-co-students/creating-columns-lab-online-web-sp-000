@@ -47,5 +47,52 @@ img:hover {
 }
 
 /* create a column class! make sure all of the divs within 'container's have a class of 'column' */
-
+.column{
+  display: flex;
+  flex-direction: row;
+}
 /* create your tile classes! we recommend .small .med .large */
+.large{
+  height: 100%;
+  width: 100%;
+}
+
+.left.column{
+  flex-direction: column;
+}
+
+.right.column{
+  flex-direction: column;
+}
+
+.amiable .left.column{
+  width: 33.33%;
+}
+
+.amiable .right.column{
+  width: 66.66%;
+}
+
+.indifferent .left.column{
+  width: 66.66%;
+}
+
+.indifferent .right.column{
+  width: 33.33%;
+}
+
+.column img.small {
+  width: 100%;
+}
+
+.column img.med{
+  width: 100%;
+}
+
+.column.lower img.small{
+  width: 50%;
+}
+
+.column.lower{
+  flex-direction: row;
+}
