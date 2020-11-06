@@ -49,22 +49,12 @@ img:hover {
 /* create a column class! make sure all of the divs within 'container's have a class of 'column' */
 .column{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 /* create your tile classes! we recommend .small .med .large */
-.small{
-  height: 30%;
-  width: 30%;
-}
-
-.med{
-  height: 60%;
-  width: 60%;
-}
-
 .large{
-  height: 90%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
 }
 
 .left.column{
@@ -73,23 +63,22 @@ img:hover {
 
 .right.column{
   flex-direction: column;
-  float: right;
 }
 
 .amiable .left.column{
-  width: 30%;
+  width: 33.33%;
 }
 
 .amiable .right.column{
-  width: 60%;
+  width: 66.66%;
 }
 
 .indifferent .left.column{
-  width: 60%;
+  width: 66.66%;
 }
 
 .indifferent .right.column{
-  width: 30%;
+  width: 33.33%;
 }
 
 .column img.small {
