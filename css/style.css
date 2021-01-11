@@ -1,3 +1,7 @@
+/* create a column class! make sure all of the divs within 'container's have a class of 'column' */
+
+/* create your tile classes! we recommend .small .med .large */
+
 body, html {
   width: 100%;
   height: 100%;
@@ -8,9 +12,80 @@ body, html {
   background-color: #666;
 }
 
+.column {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "one four seven"
+    "two five eight"
+    "three six nine";
+  align-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+img#a {
+  grid-area: one;
+}
+
+img#b {
+  grid-area: two;
+}
+
+img#c {
+  grid-area: three;
+}
+
+img#d {
+  grid-area: four/five/eight;
+}
+
+img#e {
+  grid-area: six;
+}
+
+img#f {
+  grid-area: nine;
+}
+
+/* Indifferent images */
+
+img#g {
+  grid-area: one/two/five;
+}
+
+img#h {
+  grid-area: three;
+}
+
+img#i {
+  grid-area: six;
+}
+
+img#j {
+  grid-area: seven;
+}
+
+img#k {
+  grid-area: eight;
+}
+
+img#l {
+  grid-area: nine;
+}
+
+
+.img {
+  grid-column: 1 / 4;
+  grid-row: 1 / 4;
+}
+
 .container, h1 {
-  width: 80%;
-  max-width: 600px;
+  width: 100%;
+  /* was width: 80% */
+  max-width: 800px;
+  /* was max-width: 600px */
   min-width: 400px;
   padding: 10px;
   margin: 10px auto;
@@ -46,6 +121,10 @@ img:hover {
   background-color: #dd4444;
 }
 
-/* create a column class! make sure all of the divs within 'container's have a class of 'column' */
+.med {
+  width: 200%; */
+ }
 
-/* create your tile classes! we recommend .small .med .large */
+.large {
+  width: 300%; */
+ }
