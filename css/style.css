@@ -46,23 +46,25 @@ img:hover {
   background-color: #dd4444;
 }
 
-.column{
-  display: inline-block;
+.column {
   width: 30%;
-  vertical-align: top;
+  display: inline-block;
 }
 
-.small{
-  height: 33%;
-  width: 33%
+/* create your tile classes! we recommend .small .med .large */
+
+.small {
+  width: 100%;
+  height: 100%;
 }
 
-.medium{
-  height: 66%;
-  width: 66%
+.medium {
+  width: 201.5%;
+  height: 201.5%;
 }
 
-.large{
-  height: 120%;
-  width: 120%
+.large {
+  width: 303%;
+  height: 303%;
+}
 }
